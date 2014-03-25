@@ -6,7 +6,7 @@ gem 'rails', '4.1.0.rc1'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 # Use SCSS for stylesheets
-#gem 'sass-rails', '~> 4.0.1'
+gem 'sass-rails', '~> 4.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'quiet_assets'
+gem 'bootstrap-sass'
 
 group :production do
   gem 'pg', '0.15.1'
