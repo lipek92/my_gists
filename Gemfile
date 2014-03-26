@@ -41,7 +41,7 @@ gem 'spring',        group: :development
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'quiet_assets'
-gem 'bootstrap-sass', '2.3.2.0'
+gem 'bootstrap-sass'
 
 group :production do
   gem 'pg', '0.15.1'
