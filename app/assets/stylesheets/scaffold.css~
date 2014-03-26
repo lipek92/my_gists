@@ -7,7 +7,7 @@ body, p, ol, ul, td {
 }
 
 pre {
-  background-color: #dadc30;
+  background-color: #eee;
   padding: 10px;
   font-size: 13px;
   text-align: left;

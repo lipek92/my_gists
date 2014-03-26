@@ -2,7 +2,7 @@
   <small>
     Projekt na zaliczenie przedmiotu "Architektura serwisów internetowych".
   </small>
-  <small class="pull-right">
+  <nav>
 	&copy; Michał Lipowski
-  </small>
+  </nav>
 </footer>
