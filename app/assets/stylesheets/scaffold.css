@@ -27,6 +27,13 @@ background: #10618c;
 text-align: center;
 }
 
+td:nth-of-type(3)
+{
+word-break: break-all;
+word-wrap: break-word;
+max-width: 300px;
+}
+
 
 /* Cells in even rows (2,4,6...) are one color */ 
 tr:nth-child(even) td { background: #1888b9; }   
@@ -69,6 +76,10 @@ height: 100%;
 td:nth-of-type(2):before { content: "Język: "; }
 td:nth-of-type(3):before { content: "Opis: "; }
 
+td:nth-of-type(3)
+{
+max-width: none;
+}
 
 .footer
 {
