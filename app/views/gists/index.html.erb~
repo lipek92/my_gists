@@ -25,7 +25,7 @@
   </tbody>
 </table>
 
-<center><%= will_paginate @gists, renderer: BootstrapPagination::Rails %></center>
+<center><%= will_paginate @gists %></center>
 
 <br>
 
