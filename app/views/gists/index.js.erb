@@ -1,5 +1,5 @@
 $('#my-gists').append('<%= j render @gists %>');
-<% if @posts.next_page %>
+<% if @gists.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate @gists %>');
 <% else %>
   $(window).off('scroll');
