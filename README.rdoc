@@ -1,7 +1,25 @@
-== My Gists
+#My Gists
+##Aplikacja na zaliczenie przedmiotu Architektura Serwisów Internetowych
 
-Aplikacja na zaliczenie przedmiotu Architektura serwisów internetowych
-
-== Link do aplikacji
-
+###Link do aplikacji na Heroku
 http://mygistsmlipowski.herokuapp.com/
+
+###Dodane gemy:
+* gem pygments.rb
+* gem redcarpet
+* gem quiet_assets
+* gem bootstrap-sass
+* gem will_paginate
+* gem will_paginate-bootstrap
+
+###Wykonane zadania:
+* Poprawione widoki
+* Zmiana CSS
+* Kolorowanie kodu
+* Paginacja (infinite scrolling)
+* Responsywność strony
+* Przycinanie kodu do określonej długości na stronie głównej
+* Dodane kilka przykładowych rekordów do pliku seeds.rb
+** TODO: Zaimplementowane wyszukiwanie
+
+
