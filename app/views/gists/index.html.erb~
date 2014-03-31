@@ -21,9 +21,11 @@
         <td><%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Czy na pewno usunąć?' }, :class => "btn btn-danger btn-lg" %></td>
       </tr>
     <% end %>
+
   </tbody>
 </table>
-<center><%= will_paginate %></center>
+
+<center><%= will_paginate @gists, renderer: BootstrapPagination::Rails %></center>
 
 <br>
 
