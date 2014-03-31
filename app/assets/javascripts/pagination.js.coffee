@@ -3,7 +3,7 @@ jQuery ->
     $(window).on 'scroll', ->
       more_posts_url = $('.pagination .next_page').attr('href')
       if more_posts_url && $(window).scrollTop() > $(document).height() - $(window).height() - 60
-        $('.pagination').html('<img src="http://techniczny.uni.lodz.pl/wp-content/themes/uni/images/ajax-loader.gif" alt="Loading..." title="Loading..." />')
+        $('.pagination').html('<img src="http://lipek.ayz.pl/ajax-loader.gif" alt="Wczytywanie..." title="Wczytywanie..." />')
         $.getScript more_posts_url
       return
       return
