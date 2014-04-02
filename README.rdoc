@@ -20,6 +20,6 @@ http://mygistsmlipowski.herokuapp.com/
 * Responsywność strony
 * Przycinanie kodu do określonej długości na stronie głównej
 * Dodane kilka przykładowych rekordów do pliku seeds.rb
-** TODO: Zaimplementowane wyszukiwanie
+* Zaimplementowane wyszukiwanie
 
 
