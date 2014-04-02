@@ -29,7 +29,6 @@ text-align: center;
 
 td:nth-of-type(3)
 {
-word-break: break-all;
 word-wrap: break-word;
 max-width: 300px;
 }
