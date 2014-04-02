@@ -1,3 +1,7 @@
+<%- model_class = Gist -%>
+<%= form_tag gists_path, :method => 'get',:class =>"form-search", :id => "gists_search" do %>
+  <%= text_field_tag :search, params[:search], :class => 'input-medium search-query'%>
+  <%= submit_tag "Search", :name => nil, :class => 'btn' %>
 <br />
 <%= link_to 'Dodaj kod', new_gist_path, :class => "btn btn-success btn-lg btn-block" %>
 
@@ -18,7 +22,7 @@
   </tbody>
 </table>
 
-<div id="infinite-scrolling" style="visibility: hidden;>
+<div id="infinite-scrolling">
   <center><%= will_paginate %></center>
 </div>
 
