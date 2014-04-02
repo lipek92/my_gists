@@ -23,12 +23,12 @@
     <%= f.text_area :snippet %>
   </div>
   <div class="field">
-    <%= f.label :język %><br>
-    <%= f.select :lang, all_lexers %>
-  </div>
-  <div class="field">
     <%= f.label :opis %><br>
     <%= f.text_field :description, :maxlength => 100 %>
+  </div>
+  <div class="field">
+    <%= f.label :język %><br>
+    <%= f.select :lang, all_lexers %>
   </div>
 <br>
   <div class="actions">

@@ -137,8 +137,22 @@ body, p, ol, ul, td {
 pre {
   font-size: 11px;
 }
+
+.github
+{
+display: none;
 }
 
+.search-query
+{
+max-width: 100px;
+}
+}
+
+#gist_description
+{
+width: 100%;
+}
 a { color: #fff; text-decoration: none; font-weight:bold; }
 a:visited { color: #fff; text-decoration: none;}
 a:hover { color: #fff; text-decoration: none; }
