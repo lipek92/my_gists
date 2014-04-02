@@ -6,6 +6,28 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
+20.times do
+  Gist.create(snippet: '
+#include <stdio.h>
+int bit_liczby(int numer, int liczba)
+{
+return ((liczba >> numer) & 1);
+}
+   
+int main(){    
+  int numer, liczba;    
+  printf("Podaj liczbe: ");   
+  scanf("%i", &liczba);   
+  printf("Podaj ktory bit tej liczby wydrukowac: ");    
+  scanf("%i", &numer);    
+  printf("\n%i\n", bit_liczby(numer, liczba)); 
+
+  return 0;  
+} 
+', lang:"c" , description: "drukowanie bitow liczby")
+end
+
 Gist.create(
 snippet:
 '
@@ -209,4 +231,62 @@ int main(void)
 ',
 lang: 'c',
 description: 'Hello World w C'
+)
+
+Gist.create(
+snippet:
+'
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main()
+{
+    int i=0;
+ 
+    while(i<255) 
+    {
+        printf("\n \a %d = %c ",i,i);
+        i=i+1; 
+    }
+    getchar();
+    return 0;
+}
+',
+lang: 'c',
+description: 'ASCII Generator'
+)
+
+Gist.create(
+snippet:
+"
+program silnia_rek;
+
+function silnia(n : integer) : extended;
+begin
+  if n < 2 then silnia := 1 else silnia := n * silnia(n - 1);
+end;
+
+var
+  n : cardinal;
+
+begin
+  writeln('Program oblicza rekurencyjnie silnie z liczby n');
+  writeln('------------------------------------------------------');
+  writeln('(C)2005 mgr Jerzy Walaszek I LO w Tarnowie');
+  writeln;
+  write('Podaj n = '); readln(n);
+  writeln;
+  writeln(n,'! = ',silnia(n):0:0);
+  writeln;
+  write('Nacisnij Enter...'); readln;
+end.
+
+// Rekurencyjne obliczanie silni
+//------------------------------
+// (C)2012 I LO w Tarnowie
+// I LO w Tarnowie
+//------------------------------ 
+",
+lang: 'pascal',
+description: 'Silnia rekurencyjnie'
 )
